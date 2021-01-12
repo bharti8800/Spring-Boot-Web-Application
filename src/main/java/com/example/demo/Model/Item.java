@@ -1,10 +1,14 @@
 package com.example.demo.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import org.springframework.stereotype.Component;
 
 @Component
+@Entity
 public class Item {
-	
+	@Id
 	private int serialId;
 	private String name;
 	private int quantity;
